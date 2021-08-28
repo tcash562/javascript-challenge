@@ -17,7 +17,7 @@ function runEnter(){
     var results = sightings.filter(sighting => sighting.datetime == inputValue);
     results.forEach((UFOReport) => {
 
-        var row = tbody.append("trr");
+        var row = tbody.append("tr");
 
         Object.entries(UFOReport).forEach(([key, value]) => {
             var cell = row.append("td");
